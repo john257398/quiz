@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>quiz2</title>
+    <link rel="stylesheet" href="../cssComponents/secondpagecorrect.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="show">
+      <img src="../images/Vector 7.png" id="vector" />
+      <img src="../images/Ellipse 12.png" id="ellipse12" />
+      <img src="../images/Ellipse 13.png" id="ellipse13" />
+      <img src="../images/Vector 8.png" id="vector8" />
+      <div id="showChild">
+        <div id="great">
+          <div id="ellipse2">
+            <img src="../images/Ellipse 2.png" />
+          </div>
+          <div id="vector2"><img src="../images/Vector 2.png" /></div>
+          <div id="vector3"><img src="../images/Vector 3.png" /></div>
+          <div id="vector4"><img src="../images/Vector 4.png" /></div>
+          <div id="vector5"><img src="../images/Vector 5.png" /></div>
+          <div id="vector6"><img src="../images/Vector 6.png" /></div>
+          <div id="allGreat">
+            <div id="nuesDiv">
+              <img src="../images/nues 1.png" id="nues" />
+            </div>
+            <div id="greatchild">
+              <p>Faculty of Management Science</p>
+            </div>
+          </div>
+          <div id="great2">
+            <p id="quiz">QUIZ APP</p>
+          </div>
+          <div id="vectora"><img src="../images/Vector.png" /></div>
+        </div>
+        <div id="doctor">
+          <div id="doctor2Div">
+            <div id="doctor2">
+              <div id="user1Div">
+                <img src="../images/user.png" id="user1" />
+              </div>
+            </div>
+            <div id="instructions">
+              <h2 id="read">READ CAREFULLY !!!</h2>
+              <div id="unorderedDiv">
+                <ul id="unordered">
+                  <li>
+                    There are 2 categories and a total of 30 questions to be
+                    answered.Please do not click submit unless you are sure of
+                    submitting.
+                  </li>
+                  <br />
+                  <li><span>exam id is</span> <span id="shown"></span></li>
+                  <br />
+                  <li>
+                    Any form of malpractice would render your test
+                    nullified,stick to the rules.GOOD LUCK !
+                  </li>
+                  <br />
+                  <li>Exam duration:25 minutes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <form action="firstquestion.html">
+            <div id="submitDiv">
+              <input type="submit" id="submit" value="START TEST" />
+            </div>
+          </form>
+          <img src="../images/Ellipse3.png" id="ellipse3" />
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("shown").innerHTML =
+        localStorage.getItem("setit");
+    </script>
+  </body>
+</html>
