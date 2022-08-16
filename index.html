@@ -1,11 +1,102 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    the greatest of all time
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>quiz</title>
+    <link rel="stylesheet" href="./cssComponents/johnprojectcorrect.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="show">
+      <img src="./images/Vector 7.png" id="vector" />
+      <img src="./images/Ellipse 12.png" id="ellipse12" />
+      <img src="./images/Ellipse 13.png" id="ellipse13" />
+      <img src="./images/Vector 8.png" id="vector8" />
+      <div id="showChild">
+        <div id="great">
+          <div id="ellipse2">
+            <img src="./images/Ellipse 2.png" id="ellipse2Child" />
+          </div>
+          <div id="vector2"><img src="./images/Vector 2.png" /></div>
+          <div id="vector3"><img src="./images/Vector 3.png" /></div>
+          <div id="vector4"><img src="./images/Vector 4.png" /></div>
+          <div id="vector5"><img src="./images/Vector 5.png" /></div>
+          <div id="vector6"><img src="./images/Vector 6.png" /></div>
+          <div id="allGreat">
+            <div id="nuesDiv">
+              <img src="./images/nues 1.png" id="nues" />
+            </div>
+            <div id="greatchild">
+              <p>Faculty of Management Science</p>
+            </div>
+          </div>
+          <div id="great2">
+            <p id="quiz">QUIZ APP</p>
+          </div>
+
+          <div id="vectora"><img src="./images/Vector.png" /></div>
+        </div>
+        <div id="doctor">
+          <div id="doctor2">
+            <div id="user1Div"><img src="./images/user.png" id="user1" /></div>
+            <div id="doctor3">
+              Welcome,<br />Please Sign in to start your text
+            </div>
+          </div>
+          <form
+            action="htmlComponents/secondpagecorrect.html"
+            name="best"
+            onsubmit="return validate()"
+            method="GET"
+          >
+            <div id="numberDiv">
+              <input
+                type="number"
+                name="matricno"
+                placeholder="Enter matric number..."
+                id="number"
+              />
+              <input
+                type="text"
+                name="examid"
+                placeholder="Enter exam id..."
+                id="text"
+              />
+            </div>
+            <div id="submitDiv">
+              <input
+                type="submit"
+                id="submit"
+                value="START TEST"
+                onclick="passvalue()"
+              />
+            </div>
+          </form>
+          <img src="./images/Ellipse3.png" id="ellipse3" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function passvalue() {
+        var firstname = document.getElementById("text").value;
+        localStorage.setItem("setit", firstname);
+        return false;
+      }
+      function validate() {
+        var t = document.forms["best"]["matricno"].value;
+        var u = document.forms["best"]["examid"].value;
+        if (t == "" && u != "") {
+          alert("Matric number must be filled");
+          return false;
+        }
+        if (u == "" && t != "") {
+          alert("Exam id must be filled");
+          return false;
+        }
+        if (t == "" && u == "") {
+          alert("Matric number and exam id must be filled");
+          return false;
+        }
+      }
+    </script>
+  </body>
 </html>
