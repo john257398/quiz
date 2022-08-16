@@ -175,9 +175,9 @@ body {
 #allDiv {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 1rem;
+  width: fit-content;
   margin-left: auto;
-  width: 21%;
   margin-right: 5%;
 }
 #question {
@@ -219,7 +219,12 @@ body {
   box-sizing: border-box;
   margin-left: 5%;
   font-size: 18px;
-  padding-left: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
   border: 2px solid rgb(137, 75, 152);
   border-radius: 5px;
   color: rgb(26, 23, 23);
@@ -715,7 +720,6 @@ body {
   #allDiv {
     margin-right: auto;
     margin-left: auto;
-    width: 43%;
   }
   #wholequestionDiv {
     margin-top: -8%;
@@ -947,10 +951,6 @@ body {
   }
 }
 @media screen and (width:540px) and (height:720px){
-  
-  #allDiv{
-    width: 30%;
-  }
   #wholequestionDiv{
     margin-top: -5%;
   }
@@ -1002,7 +1002,6 @@ body {
   }
   #allDiv{
     font-size: 80%;
-    width: 47%;
   }
   .down,
   .down2,

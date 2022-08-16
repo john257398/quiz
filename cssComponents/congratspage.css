@@ -160,7 +160,8 @@ body {
   height: 200px;
 }
 #correctlyDiv {
-  width: fit-content;
+  width: 650px;
+  text-align: center;
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -291,6 +292,7 @@ body {
   }
   #correctlyDiv {
     margin-top: 15%;
+    width: 310px;
   }
   #correctly {
     font-size: 17px;
@@ -382,6 +384,7 @@ body {
   }
   #correctlyDiv {
     margin-top: 10%;
+    width: 400px;
   }
   #closeDiv {
     margin-top: 10%;
@@ -393,6 +396,7 @@ body {
   }
   #correctlyDiv {
     text-align: center;
+    width: 250px;
   }
 }
 @media screen and (width: 412px) {
@@ -405,6 +409,9 @@ body {
     margin-top: 10%;
   }
   #congrats {
+    width: 500px;
+  }
+  #correctlyDiv{
     width: 500px;
   }
 }
